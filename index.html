@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="main.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -28,6 +29,7 @@
       }
     }
   </script>
+
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -58,6 +60,23 @@
     </div>
     <!-- button -->
     <a href="#" class="hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight">Get Started</a>
+    <!-- hamburger icon  -->
+    <button id="menu-btn" class="block hamburger md:hidden focus:outling-none">
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
+    </button>
+  </div>
+
+  <!-- mobile-menu  -->
+  <div class="md:hidden">
+    <div id="menu" class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+      <a href="#" class="hover:text-darkGrayishBlue">Pricing</a>
+      <a href="#" class="hover:text-darkGrayishBlue">Product</a>
+      <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+      <a href="#" class="hover:text-darkGrayishBlue">Careers</a>
+      <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+    </div>
   </div>
  </nav>
 
@@ -179,7 +198,7 @@
  <!-- testimonials -->
 <section id="testimonials">
   <!-- container to heading  -->
-  <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+  <div class="max-w-6xl px-5 mx-auto mt-32 text-center bdr">
     <!-- heading  -->
     <h2 class="text-4xl font-bold text-center">
       What they’ve said.
@@ -309,5 +328,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
